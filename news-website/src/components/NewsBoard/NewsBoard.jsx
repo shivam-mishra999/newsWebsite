@@ -7,7 +7,7 @@ export default function NewsBoard({category}) {
     console.log(process.env.REACT_APP_API_KEY);
 
     useEffect(()=> {
-        const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`
+        const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=dae7b9df5b26456aa9b6a5bb1fcaa8af`
         fetch(url)
         .then((response)=>response.json())
         .then((data)=>setArticles(data.articles))
